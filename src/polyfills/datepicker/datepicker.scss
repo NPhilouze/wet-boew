@@ -25,6 +25,11 @@
 		input {
 			@extend %datepicker-inline-block;
 		}
+		
+		.input-group-addon {
+			width: auto;
+			padding: 0;
+		}
 	}
 }
 
@@ -40,12 +45,24 @@
 	font-size: 1.7em;
 }
 
-.picker-field {
-	width: 7em !important;
+.picker-toggle {
+	border: 0;
+	display: inline-block;
+	padding:  6px 12px !important;
+
+	&:link,
+	&:visited,
+	&:focus {
+		color: #000;
+	}
+
+	span {
+		font-size: 1.3em;
+	}
 }
 
-.input-group-btn {
-	width: auto !important;
+.picker-field {
+	width: 7em !important;
 }
 
 .cal-days {
