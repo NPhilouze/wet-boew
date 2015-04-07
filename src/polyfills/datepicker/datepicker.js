@@ -111,9 +111,9 @@ var componentName = "wb-date",
 			showFieldLabel = i18nText.show + fieldLabel,
 			objToggle = "<span class='input-group-btn'><button class='btn btn-default picker-toggle' type='button' id='" + fieldId + "-picker-toggle' title=\"" +
 				showFieldLabel + "\"><span class='glyphicon glyphicon-calendar'></span><span class='wb-inv'>" +
-				showFieldLabel + "</span></button></span></div>";
+				showFieldLabel + "</span></button></span>";
 
-		$( "#" + fieldId ).prev(".label").before("<div class='input-group'>").wrap( "<span class='wb-date-wrap'/>" ).after( objToggle );
+		$( "#" + fieldId ).wrap( "<div class='input-group'/>" ).wrap( "<span class='wb-date-wrap'/>" ).after( objToggle );
 		$container.slideUp( 0 );
 	},
 
